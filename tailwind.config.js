@@ -4,6 +4,9 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extendnp: {},
+    fontFamily: {
+        serif: ['bodoni MT', 'ui-serif', 'Georgia']
+    },
   },
   plugins: [],
 }
