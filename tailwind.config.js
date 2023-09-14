@@ -5,7 +5,8 @@ export default {
   theme: {
     extendnp: {},
     fontFamily: {
-        serif: ['bodoni MT', 'ui-serif', 'Georgia']
+        serif: ['bodoni MT', 'ui-serif', 'Georgia'],
+        logo: 'Baskerville',
     },
   },
   plugins: [],
