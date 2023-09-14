@@ -3,3 +3,8 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'baskerville';
+    src: url("../public/assets/fonts/Baskervville-Regular.otf");
+}

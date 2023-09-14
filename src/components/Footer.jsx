@@ -12,7 +12,7 @@ function Footer() {
     return (
         <>
             <div className="fixed left-0 bottom-0 flex flex-row w-screen">
-                <div className="basis-1/3 flex justify-start pl-7 pb-7 text-5xl font-logo">JM</div>
+                <div className="basis-1/3 flex justify-start pl-7 pb-7 text-5xl font-secondary">JM</div>
                 <div className="basis-1/3 flex justify-center pb-4">
                     <button onClick={()=>{
                         console.log("hi there")

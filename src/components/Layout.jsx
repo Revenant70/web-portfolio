@@ -8,10 +8,10 @@ function Layout(){
     return(
         <div className="App">
             <Navbar />
-            <Socials />
             <div className='page'>
                 <Outlet />
             </div>
+            <Socials />
             <Footer />
         </div>
     )

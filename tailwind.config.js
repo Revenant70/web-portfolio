@@ -6,7 +6,7 @@ export default {
     extendnp: {},
     fontFamily: {
         serif: ['bodoni MT', 'ui-serif', 'Georgia'],
-        logo: 'Baskerville',
+        secondary: ['baskerville', 'bodoni MT', 'ui-serif', 'Georgia']
     },
   },
   plugins: [],
