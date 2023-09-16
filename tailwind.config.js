@@ -3,6 +3,12 @@ export default {
   content: ["*.html",
     "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      primary: '#FBFBFB',
+      secondary: '#0F0F0F',
+      accent1: '#339989',
+      accent2: '#2D2E2E',
+    },
     extend: {
       width: {
         112: '28rem',
