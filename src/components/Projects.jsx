@@ -10,9 +10,9 @@ function Projects() {
     >
       <div className="min-h-screen w-8/12 flex flex-col justify-center gap-12 snap-start">
         <div className="flex flex-row justify-between w-full h-64">
-          <div className="h-64 w-7/12">
+          <div className="h-64 2xl:w-6/12">
             <h2 className="text-secondary font-serif text-5xl">Project #1</h2>
-            <div className="bg-accent1 h-0.5 w-6/12 mt-3 mb-3"></div>
+            <div className="bg-accent1 h-0.5 2xl:w-6/12 mt-3 mb-3"></div>
             <ul
               className={`flex flex-row justify-start gap-5 font-serif text-2xl mb-3`}
             >
@@ -43,12 +43,12 @@ function Projects() {
               <FontAwesomeIcon icon={faGithub} size={"xl"} />
             </a>
           </div>
-          <div className="bg-secondary h-64 w-5/12 "></div>
+          <div className="bg-secondary h-64 2xl:w-6/12"></div>
         </div>
-        <div className="flex flex-row justify-between w-full h-64 ">
-          <div className="bg-secondary h-64 w-5/12 "></div>
-          <div className="flex flex-row justify-end w-6/12">
-            <div className="h-64 w-6/12">
+        <div className="flex flex-row justify-between w-full h-64">
+          <div className="bg-secondary h-64 2xl:w-6/12"></div>
+          <div className="flex flex-row justify-end 2xl:w-6/12">
+            <div className="h-64 2xl:w-6/12">
               <h2 className="text-secondary font-serif text-5xl">Project #2</h2>
               <div className="bg-accent1 h-0.5 w-full mt-3 mb-3"></div>
               <ul
@@ -86,7 +86,7 @@ function Projects() {
       </div>
       <div className="min-h-screen w-8/12 flex flex-col justify-center gap-12 snap-start">
         <div className="flex flex-row justify-between w-full h-64 ">
-          <div className="h-64 w-6/12 ">
+          <div className="h-64 2xl:w-6/12">
             <h2 className="text-secondary font-serif text-5xl">Project #3</h2>
             <div className="bg-accent1 h-0.5 w-7/12 mt-3 mb-3"></div>
             <ul
@@ -119,11 +119,11 @@ function Projects() {
               <FontAwesomeIcon icon={faGithub} size={"xl"} />
             </a>
           </div>
-          <div className="bg-secondary h-64 w-5/12 "></div>
+          <div className="bg-secondary h-64 2xl:w-6/12"></div>
         </div>
         <div className="flex flex-row justify-between w-full h-64 ">
-          <div className="bg-secondary h-64 w-5/12 "></div>
-          <div className="flex flex-row justify-end w-6/12">
+          <div className="bg-secondary h-64 2xl:w-6/12"></div>
+          <div className="flex flex-row justify-end 2xl:w-6/12">
             <div className="h-64 w-6/12">
               <h2 className="text-secondary font-serif text-5xl">Project #2</h2>
               <div className="bg-accent1 h-0.5 w-full mt-3 mb-3"></div>
