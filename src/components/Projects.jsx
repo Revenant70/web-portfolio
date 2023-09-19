@@ -8,7 +8,7 @@ function Projects() {
       id="Projects"
       className=" h-screen w-screen flex flex-col justify-items-center items-center scrollbar-hide snap-y snap-mandatory overflow-scroll"
     >
-      <div className="min-h-screen w-8/12 flex flex-col justify-center gap-12 snap-start">
+      <div className="snap-start min-h-screen w-8/12 flex flex-col justify-center gap-12">
         <div className="flex flex-row justify-between w-full h-64">
           <div className="h-64 2xl:w-6/12">
             <h2 className="text-secondary font-serif text-5xl">Project #1</h2>
@@ -84,7 +84,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="min-h-screen w-8/12 flex flex-col justify-center gap-12 snap-start">
+      <div className="snap-start min-h-screen w-8/12 flex flex-col justify-center gap-12">
         <div className="flex flex-row justify-between w-full h-64 ">
           <div className="h-64 2xl:w-6/12">
             <h2 className="text-secondary font-serif text-5xl">Project #3</h2>
