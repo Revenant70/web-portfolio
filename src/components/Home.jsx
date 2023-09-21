@@ -17,7 +17,7 @@ function Home() {
           <div>
             <img
               className="w-64 h-64 object-cover rounded-xl"
-              src="./public/assets/pngs/Professional-headshot.png"
+              src="./assets/pngs/Professional-headshot.png"
               alt="A headshot image of Jackson McGillivary"
             />
           </div>
