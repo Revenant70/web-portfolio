@@ -1,16 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+import { motion, AnimatePresence } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
-  
-    const [icons, setIcons] = useState(faToggleOff);
+  const [icons, setIcons] = useState(faToggleOff);
 
-    function handleThemeSwitch() {
-        document.documentElement.classList.toggle('dark');
-    }
-  
+  function handleThemeSwitch() {
+    document.documentElement.classList.toggle("dark");
+  }
+
   return (
     <>
       <div className="fixed left-0 bottom-0 flex flex-row w-screen">
@@ -18,14 +19,18 @@ function Footer() {
           JM
         </div>
         <div className="basis-1/3 flex justify-center">
-          <button
-            onClick={() => {
-              setIcons(icons === faToggleOn ? faToggleOff : faToggleOn);
-              handleThemeSwitch()
-            }}
-          >
-            <FontAwesomeIcon icon={icons} size={"xl"}></FontAwesomeIcon>
-          </button>
+          <AnimatePresence>
+            {icons && (
+              <motion.button
+                onClick={() => {
+                  setIcons(icons === faToggleOn ? faToggleOff : faToggleOn);
+                  handleThemeSwitch();
+                }}
+              >
+                <FontAwesomeIcon icon={icons} size={"xl"}></FontAwesomeIcon>
+              </motion.button>
+            )};
+          </AnimatePresence>
         </div>
         <div className="basis-1/3 flex justify-center"></div>
       </div>
