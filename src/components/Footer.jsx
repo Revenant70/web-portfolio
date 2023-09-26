@@ -5,20 +5,35 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons";
 
+
+function handleThemeSwitch() {
+  document.documentElement.classList.toggle("dark");
+}
+
+window.addEventListener("resize", function() {
+  if(this.window.innerWidth >= 768) {
+    document.getElementById('footer-container').classList.remove('top-0')
+    document.getElementById('footer-container').classList.add('bottom-0')
+  } else {
+    document.getElementById('footer-container').classList.remove('bottom-0')
+    document.getElementById('footer-container').classList.add('top-0')
+  }
+})
+
+
+
 function Footer() {
   const [icons, setIcons] = useState(faToggleOff);
 
-  function handleThemeSwitch() {
-    document.documentElement.classList.toggle("dark");
-  }
-
   return (
     <>
-      <div className="fixed left-0 bottom-0 flex flex-row w-screen">
-        <div className="basis-1/3 flex justify-start pl-7 pb-7 text-5xl font-secondary">
+      <div id="footer-container"
+        className="fixed max-h-4/12 left-0 flex flex-row md:justify-center md:items-end w-8/12"
+      >
+        <div className="basis-1/2 flex justify-start pl-5 pt-3 md:pl-7 md:pb-7 text-5xl font-secondary">
           JM
         </div>
-        <div className="basis-1/3 flex justify-center">
+        <div className="basis-1/2 flex justify-center pb-2 pt-0">
           <AnimatePresence>
             {icons && (
               <motion.button
@@ -29,10 +44,10 @@ function Footer() {
               >
                 <FontAwesomeIcon icon={icons} size={"xl"}></FontAwesomeIcon>
               </motion.button>
-            )};
+            )}
+            ;
           </AnimatePresence>
         </div>
-        <div className="basis-1/3 flex justify-center"></div>
       </div>
     </>
   );

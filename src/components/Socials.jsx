@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 function Socials() {
   return (
     <>
-      <div className="fixed left-0 top-0 h-screen">
-        <div className="h-screen flex flex-col justify-center items-start gap-16 pl-8 bg-transparent">
+      <div className="fixed left-0 bottom-0 w-screen md:h-screen md:top-0">
+        <div className=" flex flex-row justify-around items-center pb-2 sm:justify-center sm:gap-24 sm:pb-2 md:gap-8 bg-transparent md:flex-col md:justify-center md:items-start md:h-screen md:pl-8">
           <motion.a
             href="https://twitter.com/Revenant_Dev"
             target="_blank"
