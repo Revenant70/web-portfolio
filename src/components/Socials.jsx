@@ -6,44 +6,43 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
-
 function Socials() {
   return (
     <>
-      <div className="fixed left-0 bottom-0 w-screen md:h-screen md:top-0">
-        <div className=" flex flex-row justify-around items-center pb-2 sm:justify-center sm:gap-24 sm:pb-2 md:gap-8 bg-transparent md:flex-col md:justify-center md:items-start md:h-screen md:pl-8">
+      <div
+        id="socials-container"
+        className="flex justify-center items-center h-4/12 w-full md:w-0 md:h-6/12 md:items-start md:justify-center"
+      >
+        <div className="fixed bottom-0 -translate-y-1/2 left-0 flex flex-row justify-around items-end w-full pb-2 md:w-1/12 sm:justify-center sm:gap-20 md:h-8/12 md:flex-col md:items-start md:pl-6 md:top-1/2 ">
           <motion.a
             href="https://twitter.com/Revenant_Dev"
             target="_blank"
             rel="noreferrer"
-
             whileHover={{
-                scale: 1.2
+              scale: 1.2,
             }}
           >
-            <FontAwesomeIcon id="faTwitter" icon={faTwitter} size={"lg"}/>
+            <FontAwesomeIcon id="faTwitter" icon={faTwitter} size={"xl"} />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/jackson-mcgillivary-297802266/"
             target="_blank"
             rel="noreferrer"
-
             whileHover={{
-                scale: 1.2
+              scale: 1.2,
             }}
           >
-            <FontAwesomeIcon icon={faLinkedin} size={"lg"}/>
+            <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
           </motion.a>
           <motion.a
             href="https://github.com/Revenant70"
             target="_blank"
             rel="noreferrer"
-
             whileHover={{
-                scale: 1.2
+              scale: 1.2,
             }}
           >
-            <FontAwesomeIcon icon={faGithub} size={"lg"} />
+            <FontAwesomeIcon icon={faGithub} size={"xl"} />
           </motion.a>
         </div>
       </div>
