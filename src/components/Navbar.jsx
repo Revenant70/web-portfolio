@@ -6,14 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-};
-
-const elements = ['Home', 'Projects', 'About, Contact'];
-
-
 function Navbar() {
   const [box, setBox] = useState(true);
 
@@ -28,6 +20,7 @@ function Navbar() {
                 : "font-serif text-2xl font-medium"
             }
             to="/"
+            name="/"
           >
             Home
           </NavLink>
@@ -38,6 +31,7 @@ function Navbar() {
                 : "font-serif text-2xl font-medium"
             }
             to="/Projects"
+            name="Projects"
           >
             Projects
           </NavLink>
@@ -48,6 +42,7 @@ function Navbar() {
                 : "font-serif text-2xl font-medium"
             }
             to="/About"
+            name="About"
           >
             About
           </NavLink>
@@ -58,6 +53,7 @@ function Navbar() {
                 : "font-serif text-2xl font-medium"
             }
             to="/Contact"
+            name="Contact"
           >
             Contact
           </NavLink>
@@ -76,7 +72,7 @@ function Navbar() {
           <AnimatePresence>
             {!box && (
               <motion.div
-                className="bg-primary shadow-xl dark:bg-darkAccent2 w-64 h-96 absolute right-4 top-2 rounded-xl flex flex-col justify-start items-end pr-4 pt-3"
+                className="bg-primary shadow-xl dark:bg-darkAccent2 w-56 h-72 absolute right-4 top-2 rounded-xl flex flex-col justify-start items-end pr-4 pt-3"
                 initial={{
                   y: -100,
                   opacity: 0,
@@ -104,15 +100,55 @@ function Navbar() {
                     size={"2xl"}
                   ></FontAwesomeIcon>
                 </motion.button>
-                <motion.li
-                className="list-none"
-                variants={variants}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                >
-                  <div>{}</div>
-
-                </motion.li>
+                <motion.ul className="flex flex-col justify-start items-start gap-6 p-4 pl-6 w-full h-72">
+                  <NavLink
+                    whileHover={{
+                      scale: 1.1,
+                    }}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                        : "font-serif text-2xl font-medium"
+                    }
+                    to="/"
+                    name="/"
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                        : "font-serif text-2xl font-medium"
+                    }
+                    to="/Projects"
+                    name="Projects"
+                  >
+                    Projects
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                        : "font-serif text-2xl font-medium"
+                    }
+                    to="/About"
+                    name="About"
+                  >
+                    About
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                        : "font-serif text-2xl font-medium"
+                    }
+                    to="/Contact"
+                    name="Contact"
+                  >
+                    Contact
+                  </NavLink>
+                </motion.ul>
               </motion.div>
             )}
           </AnimatePresence>
