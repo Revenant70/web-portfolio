@@ -6,13 +6,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
+
+
 function Navbar() {
   const [box, setBox] = useState(true);
 
   return (
     <div className="App fixed">
       <nav>
-        <div className="flex flex-row gap-8 p-6 pl-8 hidden">
+        <div id="desktopNav" className="hidden md:flex flex-row gap-8 p-6 pl-8">
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -58,7 +60,7 @@ function Navbar() {
             Contact
           </NavLink>
         </div>
-        <div className="fixed right-0 flex gap-8 p-6 pr-8">
+        <div className="fixed right-0 flex gap-8 p-6 pr-8 md:hidden">
           <motion.button
             whileHover={{
               scale: 1.1,
