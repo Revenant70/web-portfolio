@@ -15,7 +15,7 @@ function Socials() {
       >
         <div className="fixed bottom-0 -translate-y-1/2 left-0 flex flex-row justify-around items-end w-full pb-2 md:w-1/12 sm:justify-center sm:gap-20 md:h-8/12 md:flex-col md:items-start md:pl-6 md:top-1/2 ">
           <motion.a
-            href="https://twitter.com/Revenant_Dev"
+            href="https://twitter.com/Revenant_Dev_"
             target="_blank"
             rel="noreferrer"
             whileHover={{
