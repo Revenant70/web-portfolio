@@ -8,13 +8,13 @@ function Home() {
 
   return (
     <>
-      <div className="flex justify-center items-center bg-primary dark:bg-darkPrimary">
+      <div className="flex justify-center items-center bg-primary dark:bg-darkPrimary max-h-screen">
         <div className="flex flex-col-reverse md:flex-row justify-center md:justify-around items-center h-screen w-10/12">
-          <div className="mt-12 mb-36 md:m-0 flex flex-col basis-1/2 md:basis-2/6 lg:basis-1/2">
-            <h2 className="font-secondary dark:font-darkSecondary text-center md:text-left text-xl sm:text-4xl md:text-3xl xl:text-5xl">
+          <div className="pt-4 mb-36 md:m-0 md:ml-4 flex flex-col basis-1/2 md:basis-2/6 lg:basis-1/2">
+            <h2 className="font-secondary dark:font-darkSecondary text-center md:text-left text-2xl sm:text-4xl md:text-3xl xl:text-5xl">
               Hello, my name is
             </h2>
-            <h1 className="font-secondary dark:font-darkSecondary text-center md:text-left text-4xl sm:text-5xl md:text-6xl xl:text-8xl pb-4 pt-2">
+            <h1 className="font-secondary dark:font-darkSecondary text-center md:text-left text-5xl sm:text-5xl md:text-6xl xl:text-8xl pb-2 pt-0 md:pb-4 md:pt-2">
               Jackson McGillivary.
             </h1>
             <motion.div className="flex justify-center sm:flex sm:justify-center md:flex md:justify-start md:relative ">
@@ -36,9 +36,9 @@ function Home() {
               <QuoteCard trigger={isOpen} setTrigger={isOpen} />
             </motion.div>
           </div>
-          <div className="flex justify-end basis-1/2 md:basis-4/6 lg:basis-1/2 mt-20 md:m-0 lg:m-0">
+          <div className="flex justify-start items-center basis-1/2 md:basis-4/6 lg:basis-1/2 pt-20 md:m-0 lg:m-0">
             <img
-              className="mt-20 w-44 h-44 md:m-0 md:h-56 md:w-56 lg:w-64 lg:h-64 xl:w-80 xl:h-80 object-cover rounded-xl border border-secondary bg-darkSecondary"
+              className="w-44 h-44 sm:h-56 sm:w-56 md:m-0 md:h-60 md:w-60 lg:w-64 lg:h-64 xl:w-80 xl:h-80 object-cover rounded-xl border border-secondary bg-darkSecondary"
               src="./assets/pngs/Professional-headshot.png"
               alt="A headshot image of Jackson McGillivary"
             />
