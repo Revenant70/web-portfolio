@@ -36,9 +36,9 @@ function Home() {
               <QuoteCard trigger={isOpen} setTrigger={isOpen} />
             </motion.div>
           </div>
-          <div className="flex justify-start items-center basis-1/2 md:basis-4/6 lg:basis-1/2 pt-20 md:m-0 lg:m-0">
+          <div className="flex justify-center items-end basis-1/2 md:items-center md:justify-end md:basis-4/6 lg:basis-1/2 pt-20 md:p-0 md:m-0 lg:m-0">
             <img
-              className="w-44 h-44 sm:h-56 sm:w-56 md:m-0 md:h-60 md:w-60 lg:w-64 lg:h-64 xl:w-80 xl:h-80 object-cover rounded-xl border border-secondary bg-darkSecondary"
+              className="mb-2 w-44 h-44 sm:h-56 sm:w-56 md:m-0 md:h-60 md:w-60 lg:w-64 lg:h-64 xl:w-80 xl:h-80 object-cover rounded-xl border border-secondary bg-darkSecondary"
               src="./assets/pngs/Professional-headshot.png"
               alt="A headshot image of Jackson McGillivary"
             />
