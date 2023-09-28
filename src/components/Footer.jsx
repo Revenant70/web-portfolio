@@ -9,17 +9,6 @@ function handleThemeSwitch() {
   document.documentElement.classList.toggle("dark");
 }
 
-setInterval(function () {
-  console.log("hi there");
-  if (this.window.innerWidth >= 768) {
-    document.getElementById("footer-container").classList.remove("top-0");
-    document.getElementById("footer-container").classList.add("bottom-0");
-  } else {
-    document.getElementById("footer-container").classList.remove("bottom-0");
-    document.getElementById("footer-container").classList.add("top-0");
-  }
-}, 10);
-
 function Footer() {
   const [icons, setIcons] = useState(faToggleOff);
 

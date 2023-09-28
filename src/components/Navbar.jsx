@@ -6,8 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-
-
 function Navbar() {
   const [box, setBox] = useState(true);
 
@@ -62,9 +60,6 @@ function Navbar() {
         </div>
         <div className="fixed right-0 flex gap-8 p-6 pr-8 md:hidden">
           <motion.button
-            whileHover={{
-              scale: 1.1,
-            }}
             onClick={() => {
               setBox(box === false ? true : false);
             }}
@@ -90,9 +85,6 @@ function Navbar() {
                 }}
               >
                 <motion.button
-                  whileHover={{
-                    scale: 1.1,
-                  }}
                   onClick={() => {
                     setBox(box === false ? true : false);
                   }}
@@ -103,53 +95,74 @@ function Navbar() {
                   ></FontAwesomeIcon>
                 </motion.button>
                 <motion.ul className="flex flex-col justify-start items-start gap-6 p-4 pl-6 w-full h-72">
-                  <NavLink
-                    whileHover={{
-                      scale: 1.1,
+                  <motion.button
+                    onClick={() => {
+                      setBox(box === false ? true : false);
                     }}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
-                        : "font-serif text-2xl font-medium"
-                    }
-                    to="/"
-                    name="/"
                   >
-                    Home
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
-                        : "font-serif text-2xl font-medium"
-                    }
-                    to="/Projects"
-                    name="Projects"
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          : "font-serif text-2xl font-medium"
+                      }
+                      to="/"
+                      name="/"
+                    >
+                      Home
+                    </NavLink>
+                  </motion.button>
+                  <motion.button
+                    onClick={() => {
+                      setBox(box === false ? true : false);
+                    }}
                   >
-                    Projects
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
-                        : "font-serif text-2xl font-medium"
-                    }
-                    to="/About"
-                    name="About"
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          : "font-serif text-2xl font-medium"
+                      }
+                      to="/Projects"
+                      name="Projects"
+                    >
+                      Projects
+                    </NavLink>
+                  </motion.button>
+                  <motion.button
+                    onClick={() => {
+                      setBox(box === false ? true : false);
+                    }}
                   >
-                    About
-                  </NavLink>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "font-serif text-2xl font-medium border-b-2 border-accent1"
-                        : "font-serif text-2xl font-medium"
-                    }
-                    to="/Contact"
-                    name="Contact"
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          : "font-serif text-2xl font-medium"
+                      }
+                      to="/About"
+                      name="About"
+                    >
+                      About
+                    </NavLink>
+                  </motion.button>
+                  <motion.button
+                    onClick={() => {
+                      setBox(box === false ? true : false);
+                    }}
                   >
-                    Contact
-                  </NavLink>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          : "font-serif text-2xl font-medium"
+                      }
+                      to="/Contact"
+                      name="Contact"
+                    >
+                      Contact
+                    </NavLink>
+                  </motion.button>
                 </motion.ul>
               </motion.div>
             )}
