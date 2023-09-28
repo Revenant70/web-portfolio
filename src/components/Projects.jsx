@@ -3,29 +3,24 @@ import { ProjectBox } from "./ProjectBox";
 
 function Projects() {
   return (
-    <div
-      id="Projects"
-      className="bg-primary dark:bg-darkPrimary h-screen w-screen flex flex-col justify-items-center items-center scrollbar-hide snap-y snap-mandatory overflow-scroll"
-    >
-      <div className="snap-start min-h-screen w-8/12 flex flex-col justify-center gap-12">
-        <div className="flex flex-row justify-between w-full h-64 gap-x-24">
-          <ProjectBox></ProjectBox>
-          <ProjectInfo></ProjectInfo>
-        </div>
-        <div className="flex flex-row justify-between w-full h-64 gap-x-24">
+    <div className="h-screen w-screen">
+      <div className="flex flex-col justify-center items-center px-8">
+        <section className="flex flex-col md:flex-row justify-center items-center h-screen w-11/12 md:w-10/12">
           <ProjectInfo></ProjectInfo>
           <ProjectBox></ProjectBox>
-        </div>
-      </div>
-      <div className="snap-start min-h-screen w-8/12 flex flex-col justify-center gap-12">
-        <div className="flex flex-row justify-between w-full h-64 gap-x-24">
-        <ProjectBox></ProjectBox>
-        <ProjectInfo></ProjectInfo>
-        </div>
-        <div className="flex flex-row justify-between w-full h-64 gap-x-24">
+        </section>
+        <section className="flex flex-col-reverse md:flex-row justify-center items-center h-screen w-11/12 md:w-10/12">
+          <ProjectBox></ProjectBox>
+          <ProjectInfo right={"md:items-end"}></ProjectInfo>
+        </section>
+        <section className="flex flex-col md:flex-row justify-center items-center h-screen w-11/12 md:w-10/12">
           <ProjectInfo></ProjectInfo>
           <ProjectBox></ProjectBox>
-        </div>
+        </section>
+        <section className="flex flex-col-reverse md:flex-row justify-center items-center h-screen w-11/12 md:w-10/12">
+          <ProjectBox></ProjectBox>
+          <ProjectInfo right={"md:items-end"}></ProjectInfo>
+        </section>
       </div>
     </div>
   );
