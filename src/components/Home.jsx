@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <div className="flex justify-center items-center bg-primary dark:bg-darkPrimary max-h-full">
-        <div className="h-screen w-10/12 flex justify-center items-center md:justify-center md:items-center">
+        <div className="h-sc w-10/12 flex justify-center items-center md:justify-center md:items-center">
           <div className="flex flex-col-reverse md:flex-row justify-center md:justify-around items-center h-screen w-full">
             <div className="pt-4 mb-20 md:m-0 md:ml-4 flex flex-col basis-1/2 md:basis-2/6 lg:basis-1/2">
               <h2 className="font-secondary dark:font-darkSecondary text-center md:text-left text-2xl sm:text-4xl md:text-3xl xl:text-4xl">

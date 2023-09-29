@@ -3,6 +3,14 @@
   padding: 0px;
 
   box-sizing: border-box;
-
-  
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #root {
+    margin: 0;
+    padding: 0px;
+
+    box-sizing: border-box;
+  }
+}
+
