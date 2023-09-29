@@ -13,7 +13,7 @@ function Socials() {
         id="socials-container"
         className="flex justify-center items-center h-4/12 w-full md:w-0 md:h-6/12 md:items-start md:justify-center"
       >
-        <div className="fixed bottom-0 -translate-y-1/2 left-0 flex flex-row justify-around items-end w-full pb-2 md:w-1/12 sm:justify-center sm:gap-20 md:h-8/12 md:flex-col md:items-start md:pl-6 md:top-1/2 ">
+        <div className="text-secondary dark:text-darkSecondary fixed bottom-0 -translate-y-1/2 left-0 flex flex-row justify-around items-end w-full pb-2 md:w-1/12 sm:justify-center sm:gap-20 md:h-8/12 md:flex-col md:items-start md:pl-6 md:top-1/2 ">
           <motion.a
             href="https://twitter.com/McGillivary_Dev"
             target="_blank"

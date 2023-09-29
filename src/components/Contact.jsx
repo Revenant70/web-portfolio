@@ -13,7 +13,7 @@ function Contact() {
           drag="x"
           dragConstraints={{ left: -100, right: 100 }}
         />
-        <form className="flex flex-col gap-3 justify-center items-center rounded-xl w-full md:w-full lg:w-10/12 xl:w-9/12 2xl:w-5/12 h-12/12 p-8 hover:shadow-lg ease-out duration-700">
+        <form className="flex flex-col gap-3 justify-center items-center rounded-xl w-full sm:w-9/12 md:w-full lg:w-10/12 xl:w-9/12 2xl:w-5/12 h-12/12 p-8 hover:shadow-lg ease-out duration-700">
           <h2 className="text-6xl text-center font-secondary border-accent1 border-b-2 pb-4">
             Reach me
           </h2>

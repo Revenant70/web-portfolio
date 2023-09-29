@@ -10,8 +10,8 @@ export default {
         accent1: '#339989',
         accent2: '#2D2E2E',
         darkPrimary: '#0B132B',
-        darkSecondary: '#B5B3A6',
-        darkAccent1: '#9D6381',
+        darkSecondary: '#FF5964',
+        darkAccent1: '#FFF94F',
         darkAccent2: '#111D41',
       
     },
