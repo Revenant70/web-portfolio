@@ -8,7 +8,7 @@ export function ProjectInfo({ right }) {
       id="project-container"
       className={`h-8/12 w-11/12 flex flex-col md:flex-col justify-center items-center md:items-start ${right}`}
     >
-      <div className={`flex flex-col justifiy-center items-center md:items-start h-full w-11/12 md:8/12`}>
+      <div className={`flex flex-col justifiy-center items-center md:items-start h-full w-11/12 md:w-8/12`}>
         <h2 className="text-secondary dark:text-darkSecondary font-serif text-5xl xl:text-7xl text-center md:text-left w-full">
           Project #1
         </h2>

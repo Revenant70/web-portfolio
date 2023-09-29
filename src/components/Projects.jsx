@@ -4,7 +4,7 @@ import { ProjectBox } from "./ProjectBox";
 function Projects() {
   return (
     <div className="h-screen w-screen">
-      <div className="flex flex-col justify-center items-center px-8">
+      <div className="bg-primary dark:bg-darkPrimary flex flex-col justify-center items-center px-8">
         <section className="flex flex-col md:flex-row justify-center items-center h-screen w-11/12 md:w-10/12">
           <ProjectInfo></ProjectInfo>
           <ProjectBox></ProjectBox>
