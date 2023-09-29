@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <>
-      <div className="fixed top-0 md:top-auto md:bottom-0 max-h-4/12 left-0 flex flex-row md:justify-center md:items-end w-8/12">
+      <div className="text-secondary dark:text-darkSecondary fixed top-0 md:top-auto md:bottom-0 max-h-4/12 left-0 flex flex-row md:justify-center md:items-end w-8/12">
         <div className="basis-1/2 flex justify-start pl-5 pt-3 md:pl-7 md:pb-7 text-5xl font-secondary">
           JM
         </div>

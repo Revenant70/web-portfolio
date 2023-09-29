@@ -12,11 +12,11 @@ function Navbar() {
   return (
     <div className="App fixed">
       <nav>
-        <div id="desktopNav" className="hidden md:flex flex-row gap-8 p-6 pl-8">
+        <div id="desktopNav" className="text-secondary dark:text-darkSecondary hidden md:flex flex-row gap-8 p-6 pl-8">
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                 : "font-serif text-2xl font-medium"
             }
             to="/"
@@ -27,7 +27,7 @@ function Navbar() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                 : "font-serif text-2xl font-medium"
             }
             to="/Projects"
@@ -38,7 +38,7 @@ function Navbar() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                 : "font-serif text-2xl font-medium"
             }
             to="/About"
@@ -49,7 +49,7 @@ function Navbar() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                 : "font-serif text-2xl font-medium"
             }
             to="/Contact"
@@ -63,6 +63,7 @@ function Navbar() {
             onClick={() => {
               setBox(box === false ? true : false);
             }}
+            className="text-secondary dark:text-darkSecondary"
           >
             <FontAwesomeIcon icon={faBars} size={"2xl"}></FontAwesomeIcon>
           </motion.button>
@@ -88,13 +89,14 @@ function Navbar() {
                   onClick={() => {
                     setBox(box === false ? true : false);
                   }}
+                  className="text-secondary dark:text-darkSecondary"
                 >
                   <FontAwesomeIcon
                     icon={faXmark}
                     size={"2xl"}
                   ></FontAwesomeIcon>
                 </motion.button>
-                <motion.ul className="flex flex-col justify-start items-start gap-6 p-4 pl-6 w-full h-72">
+                <motion.ul className="text-secondary dark:text-darkSecondary flex flex-col justify-start items-start gap-6 p-4 pl-6 w-full h-72">
                   <motion.button
                     onClick={() => {
                       setBox(box === false ? true : false);
@@ -103,7 +105,7 @@ function Navbar() {
                     <NavLink
                       className={({ isActive }) =>
                         isActive
-                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                           : "font-serif text-2xl font-medium"
                       }
                       to="/"
@@ -120,7 +122,7 @@ function Navbar() {
                     <NavLink
                       className={({ isActive }) =>
                         isActive
-                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                           : "font-serif text-2xl font-medium"
                       }
                       to="/Projects"
@@ -137,7 +139,7 @@ function Navbar() {
                     <NavLink
                       className={({ isActive }) =>
                         isActive
-                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                           : "font-serif text-2xl font-medium"
                       }
                       to="/About"
@@ -154,7 +156,7 @@ function Navbar() {
                     <NavLink
                       className={({ isActive }) =>
                         isActive
-                          ? "font-serif text-2xl font-medium border-b-2 border-accent1"
+                          ? "font-serif text-2xl font-medium border-b-2 border-accent1 dark:border-darkAccent1"
                           : "font-serif text-2xl font-medium"
                       }
                       to="/Contact"
