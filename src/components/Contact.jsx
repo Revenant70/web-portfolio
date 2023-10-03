@@ -22,20 +22,26 @@ function Contact() {
               className="flex flex-col w-full justify-center items-center mr-2"
               htmlFor="fname"
             >
-              <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">Full name </span>
+              <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">
+                Full name*{" "}
+              </span>
               <input
                 className="border dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 placeholder-opacity-70 rounded-xl p-4 m-2 w-full"
                 type="text"
                 id="fname"
                 name="user_name"
                 placeholder="John Doe"
+                required
               />
             </label>
             <label
               className="flex flex-col w-full justify-center items-center ml-2"
               htmlFor="email"
+              required
             >
-              <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">Your email </span>
+              <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">
+                Your email*{" "}
+              </span>
               <input
                 className="border dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 text-secondary dark:text-darkAccent2 rounded-xl p-4 m-2 w-full"
                 type="text"
@@ -45,25 +51,41 @@ function Contact() {
               />
             </label>
           </div>
-
+          <label htmlFor="subject" className="flex flex-col w-full justify-center items-center">
+            <span className="text-xl font-secondary mb-3 text-secondary dark:text-darkSecondary">
+              Subject{" "}
+            </span>
+            <input
+              className="border dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 text-secondary dark:text-darkAccent2 rounded-xl p-4 m-2 w-full"
+              type="text"
+              id="email"
+              name="user_subject"
+              placeholder="Enter your subject"
+            />
+          </label>
           <label
             className="flex flex-col w-full justify-center items-center "
             htmlFor="message"
           >
-            <span className="text-xl font-secondary mb-3 text-secondary dark:text-darkSecondary">Your message </span>
+            <span className="text-xl font-secondary mb-3 text-secondary dark:text-darkSecondary">
+              Your message*{" "}
+            </span>
             <textarea
               className="border border-secondary dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 text-secondary dark:text-darkAccent2 rounded-md p-4 w-full h-32 resize-y"
               type="text"
               id="message"
               name="user_message"
               placeholder="Hey Jackson, I wanted to discuss collaborating"
+              required
             />
           </label>
           <button
             className="border border-secondary dark:bg-darkAccent1 dark:border-none rounded-full h-12 w-4/12 mt-4"
             type="button"
           >
-            <span className=" border-b-2 border-accent1 dark:border-none">Shoot</span>
+            <span className=" border-b-2 border-accent1 dark:border-none">
+              Shoot
+            </span>
           </button>
         </form>
       </div>
