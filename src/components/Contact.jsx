@@ -58,7 +58,7 @@ function Contact() {
               htmlFor="fname"
             >
               <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">
-                Full name*{" "}
+                Full name{" "}
               </span>
               <input
                 className="border dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 placeholder-opacity-70 rounded-xl p-4 m-2 w-full"
@@ -68,6 +68,7 @@ function Contact() {
                 placeholder="John Doe"
                 ref={FullName}
                 required
+                
               />
             </label>
             <label
@@ -75,7 +76,7 @@ function Contact() {
               htmlFor="email"
             >
               <span className="text-xl font-secondary text-secondary dark:text-darkSecondary">
-                Your email*{" "}
+                Your email{" "}
               </span>
               <input
                 className="border dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 text-secondary dark:text-darkAccent2 rounded-xl p-4 m-2 w-full"
@@ -109,7 +110,7 @@ function Contact() {
             htmlFor="message"
           >
             <span className="text-xl font-secondary mb-3 text-secondary dark:text-darkSecondary">
-              Your message*{" "}
+              Your message{" "}
             </span>
             <textarea
               className="border border-secondary dark:border-none bg-primary dark:bg-darkSecondary dark:placeholder-darkAccent2 text-secondary dark:text-darkAccent2 rounded-md p-4 w-full h-32 resize-y"
@@ -121,14 +122,26 @@ function Contact() {
               ref={UserMessage}
             />
           </label>
-          <button
-            className="border border-secondary dark:bg-darkAccent1 dark:border-none rounded-full h-12 w-4/12 mt-4"
+          <motion.button
+            className="border border-secondary dark:bg-none dark:border-2 dark:border-darkSecondary rounded-full h-12 w-4/12 mt-4 p-2"
             type="submit"
+            layout 
+            style={{
+              borderRadius: 40
+            }}
+            transition={{
+              layout: {duration: 0.25}
+            }}
+            whileHover={{
+              scale: 1.1,
+              borderRadius: 5,
+            }}
+
           >
-            <span className=" border-b-2 border-accent1 dark:border-none">
+            <span className=" border-b-2 border-accent1 dark:border-darkAccent1 dark:text-darkSecondary">
               Shoot
             </span>
-          </button>
+          </motion.button>
         </form>
       </div>
     </div>
