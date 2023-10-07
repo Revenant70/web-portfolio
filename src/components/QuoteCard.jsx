@@ -5,7 +5,7 @@ export default function QuoteCard(props) {
     <AnimatePresence>
         {props.trigger && (
             <motion.div
-            className="bg-primary dark:bg-darkPrimary shadow-xl flex flex-row w-72 h-48 rounded-2xl absolute top-[-0px] left-72"
+            className="bg-primary dark:bg-darkPrimary shadow-xl flex flex-row w-72 h-48 rounded-2xl absolute top-[20%] md:top-[-0px] sm:left-40 md:left-[80%] lg:left-80"
             initial={{
               x: -100,
               opacity: 0,

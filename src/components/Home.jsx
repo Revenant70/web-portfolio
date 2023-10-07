@@ -19,7 +19,7 @@ function Home() {
                 Jackson McGillivary.
               </h1>
               <motion.div className="flex justify-center sm:flex sm:justify-center md:flex md:justify-start md:relative ">
-                <p className="text-secondary  dark:text-darkSecondary font-serif w-9/12 sm:w-7/12 md:w-[20rem] text-center md:text-left text-xl sm:text-2xl md:text-2xl xl:text-3xl">
+                <p className="text-secondary  dark:text-darkSecondary font-serif w-9/12 sm:w-7/12 md:w-[16rem] lg:w-[20rem] text-center md:text-left text-xl sm:text-2xl md:text-2xl xl:text-3xl">
                   I am a software developer{" "}
                   <motion.button
                     className="border-b-2 border-accent1 dark:border-darkAccent1"
