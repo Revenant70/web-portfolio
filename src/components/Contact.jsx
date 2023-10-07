@@ -36,7 +36,7 @@ function Contact() {
       id="Contact"
       className="h-screen w-full flex justify-center items-center bg-primary dark:bg-darkPrimary"
     >
-      <div className="w-full md:w-6/12 h-screen flex flex-col justify-center items-center ">
+      <div className="w-full md:w-8/12 lg:w-9/12 h-screen flex flex-col justify-center items-center ">
         <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 1.1 }}
