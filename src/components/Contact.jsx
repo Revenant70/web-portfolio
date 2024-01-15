@@ -49,7 +49,7 @@ function Contact() {
           onSubmit={sendEmail}
           ref={form}
         >
-          <h2 className="text-6xl text-center font-secondary border-accent1 dark:border-darkAccent1 text-secondary dark:text-darkSecondary border-b-2 pb-4">
+          <h2 className="text-6xl text-center font-secondary border-accent1 dark:border-darkAccent1 text-secondary dark:text-darkSecondary border-b-2 pb-6 mb-4">
             Reach me
           </h2>
           <div className="flex flex-row justify-between w-full">

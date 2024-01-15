@@ -33,6 +33,11 @@ function Footer() {
             ;
           </AnimatePresence>
         </div>
+        <div>
+          <p className="text-secondary  dark:text-darkSecondary font-serif w-9/12 sm:w-7/12 md:w-[16rem] lg:w-[20rem] text-center md:text-right hidden md:block text-sm sm:text-md md:text-md xl:text-lg pb-3 pr-5 fixed right-0 bottom-0">
+            Designed and built by me
+          </p>
+        </div>
       </div>
     </>
   );

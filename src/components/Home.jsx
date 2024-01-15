@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import QuoteCard from "./QuoteCard";
 
-function Home() {
+function Home(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
