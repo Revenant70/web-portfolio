@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 export function ProjectInfo({ right, techUsed, appName, appDesciption, appLink, appGithubLink }) {
   return (
@@ -24,22 +25,32 @@ export function ProjectInfo({ right, techUsed, appName, appDesciption, appLink, 
           {appDesciption}  
         </p>
         <div className="hidden md:flex">
-          <a
+          <motion.a
+            whileHover={{
+              transition: 0.25,
+              y: -3,
+              scale: 1.18
+            }}
             href={appLink}
             target="_blank"
             rel="noreferrer"
             className="m-2 ml-0 dark:text-darkSecondary"
           >
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} size={"xl"} />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              transition: 0.25,
+              y: -3,
+              scale: 1.18
+            }}
             href={appGithubLink}
             target="_blank"
             rel="noreferrer"
             className="m-2 dark:text-darkSecondary"
           >
             <FontAwesomeIcon icon={faGithub} size={"xl"} />
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
