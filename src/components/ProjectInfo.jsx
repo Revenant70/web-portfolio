@@ -3,11 +3,11 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
-export function ProjectInfo({ right, techUsed, appName, appDesciption, appLink, appGithubLink }) {
+export function ProjectInfo({ right = false, techUsed, appName, appDesciption, appLink, appGithubLink }) {
   return (
     <div
       id="project-container"
-      className={`h-8/12 w-11/12 flex flex-col md:flex-col justify-center items-center md:items-start ${right}`}
+      className={`h-8/12 w-11/12 flex flex-col md:flex-col justify-center ${right ? "md:items-end" : ""}`}
     >
       <div className={`flex flex-col justifiy-center items-center md:items-start h-full w-11/12 md:w-8/12`}>
         <h2 className="text-secondary dark:text-darkSecondary font-serif text-5xl xl:text-7xl text-center md:text-left w-full">
